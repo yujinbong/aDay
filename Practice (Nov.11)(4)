@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        * {
+            color: black;
+            border-collapse: collapse;
+            list-style: none;
+            text-decoration: none;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        div>span {
+            display: block;
+            /*inline상태를 block으로 변경하게해준다.*/
+            background: pink;
+        }
+
+
+
+        .flexible {
+            display: flex; 
+        }
+
+        div>div {
+            flex: 1;
+            display: inline;
+            /*block상태를 inlie으로 변경시켜준다(none으로 변경할시 없어짐)*/
+            background: orange;
+            border: 1px solid white;
+        }
+        
+        div > div:first-child{
+            flex: 2;
+        }
+    </style>
+
+
+
+
+    <div>
+        <span>span</span>
+        <span>span</span>
+    </div>
+    <div class="flexible">
+        <div> div </div>
+        <div> div </div>
+    </div>
+
+</body>
+
+</html>
+
+
+*출처 : https://www.youtube.com/watch?v=9hUdOaboQVE ->14:50부 flex다시보기
