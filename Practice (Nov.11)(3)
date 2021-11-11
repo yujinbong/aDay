@@ -74,6 +74,15 @@
             border:1px solid white;
             background: brown;
         }
+
+        .fixedPosition >div{
+            position: fixed; /*position을 fixed는 좌표를 설정하면 고정된다.*/
+            top:0px;
+            left: 0px;
+            width: 100px;
+            height: 100px;
+            background: black;
+        }
     </style>
 
     <div class="blankPosition">
@@ -106,3 +115,4 @@
 
 *relative는 여러 요소들과 관계된 현재위치를 기준으로 움직인다.
 *absolute는 독립적으로 좌표만을 따른다.
+*fixed는 고정된 좌표애 게속 위치하개된다.
