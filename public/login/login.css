@@ -86,7 +86,7 @@
 .submit input{
     width:70%;
     height: 50px;
-    margin-left: 70px;
+    margin-left: 50px; /*Find a better way.*/
     border: 0;
     outline: none;
     border-radius: 40px;
