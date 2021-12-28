@@ -1,0 +1,233 @@
+/*전체 텍스트 & 배경색 지정하기 */
+
+body {
+  margin: 0;
+  background: white;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto Mono", monospace;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 8px 12px;
+}
+
+.navbar__logo {
+  font-size: 24px;
+  color: black;
+}
+
+.navbar__logo i {
+  color: black;
+}
+
+.navbar__menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.navbar__menu li {
+  padding: 8px 12px;
+  font-size: 20px;
+}
+
+.navbar__menu li:hover {
+  background-color: lightgrey;
+  border-radius: 8px;
+}
+
+.navbar__icons {
+  list-style: none;
+  color: black;
+  display: flex;
+  font-size: 20px;
+}
+
+.navbar__icons li {
+  padding: 8px 12px;
+}
+
+.navbar__toogleBtn {
+  position: absolute;
+  right: 32px;
+  font-size: 24px;
+  color: black;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start; /*로고 위치를 수직에서 왼쪽으로 변경해야함 */
+    padding: 8px 24px;
+  }
+
+  .navbar__menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /*메뉴 너비가 좁기때문에 center로 올수없음, 그래서 100%로 변경해야함*/
+  }
+
+  .navbar__menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar__icons {
+    display: none;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+  }
+
+  .navbar__toogleBtn {
+    display: block;
+  }
+
+  .navbar__menu.active,
+  .navbar__icons.active {
+    display: flex;
+  }
+}
+
+/*middle */
+#jb-container {
+  width: 940px;
+  margin: 100px auto;
+  padding: 20px;
+  border: 1px solid #bcbcbc;
+  border-radius: 8px;
+}
+#jb-header {
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #bcbcbc;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+}
+#jb-content {
+  width: 580px;
+  padding: 20px;
+  margin-bottom: 20px;
+  float: left;
+  border: 1px solid #bcbcbc;
+  border-radius: 8px;
+}
+#jb-sidebar {
+  width: 260px;
+  padding: 20px;
+  margin-bottom: 20px;
+  float: right;
+  border: 1px solid #bcbcbc;
+  border-radius: 8px;
+}
+#jb-footer {
+  clear: both;
+  padding: 20px;
+  border: 1px solid #bcbcbc;
+  border-radius: 8px;
+}
+
+input {
+  border: 0 1px 0 0;
+  border-radius: 8px;
+  margin: auto;
+  width: 300px;
+  height: 30px;
+  display: flex;
+  padding-left: 8px;
+}
+
+button {
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 8px;
+  height: 34px;
+  width: 40px;
+}
+
+ul li {
+  cursor: pointer;
+  position: relative;
+}
+.close {
+  position: absolute;
+  font-size: 22px;
+}
+
+ul li.checked {
+  background: #ddd;
+  color: #272341;
+  text-decoration: line-through;
+}
+
+.li2 {
+  color: black;
+  border-bottom: 1px solid lightgrey;
+  text-align: left;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+
+.ul2 {
+  text-align: left;
+
+  outline-style: none;
+  padding: 40px 0 0 0;
+}
+
+.close {
+  position: absolute;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 480px) {
+  #jb-container {
+    width: auto;
+  }
+  #jb-content {
+    float: none;
+    width: auto;
+  }
+  #jb-sidebar {
+    float: none;
+    width: auto;
+  }
+}
+
+form {
+  display: flex;
+}
+
+.form {
+  flex-direction: column;
+}
+#utitle {
+  width: 100px;
+  height: 20px;
+  border-radius: 8px;
+  padding: 5px 0 0 10px;
+}
+#ucontent {
+  width: 200px;
+  height: 40px;
+  margin-right: 180px;
+  border-radius: 8px;
+  padding: 5px 0 0 10px;
+}
+.button {
+  width: 55px;
+  display: flex;
+  height: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
