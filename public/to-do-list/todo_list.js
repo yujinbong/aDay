@@ -3,7 +3,7 @@ const menu = document.querySelector('.navbar__menu');
 const icons = document.querySelector('.navbar__icons');
 
 toggleBtn.addEventListener('click', () =>{
-//클릭이될때마다 내가 지정하고있는 이 함수를 호출해줘!
+//클릭이될때마다 우리가 지정하고있는 이 함수를 호출해줘!
 menu.classList.toggle('active');
 icons.classList.toggle('active');
 
@@ -61,6 +61,7 @@ function addItem() {
         document.querySelector(".item").focus();
     }
     showList();
+    return false;
 }
 
 
@@ -103,4 +104,6 @@ checkList.addEventListener('click', event => {
     event.target.classList.toggle('checked');
   }
 });
+
+
 
