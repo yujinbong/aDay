@@ -4,7 +4,7 @@ navigator.geolocation.getCurrentPosition(function (located) {
   },function (located){console.log('위치 정보를 불러오는데 실패했습니다.')});
   
 
-const API_KEY = '16351cde385ac78c6f0e722e9ad5a171';
+const API_KEY = 'MY API KEY';
 
 function onGeoOk(position) {
   const lat = position.coords.latitude;
