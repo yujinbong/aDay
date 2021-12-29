@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="new2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto+Mono:wght@500&display=swap"
@@ -31,8 +31,7 @@
         <ul class="navbar__icons">
 
             <li><a style="text-decoration: none" href="https://github.com/yujinbong" class="fab fa-github"></a></li>
-            <li><i class="fas fa-at"></i></li>
-            <li><a style="text-decoration: none" href="mailto: test@test.test?subject=Hello!" class="fas fa-at"></a>
+            <li><a style="text-decoration: none" href="mailto:aso23456@gmail.com?subject=Hello!" class="fas fa-at"></a>
             </li>
         </ul>
 
@@ -71,28 +70,27 @@
 
         </div>
         <div id="jb-sidebar">
-            <h2>Sidebar</h2>
-            <ul>
-                <li>Lorem</li>
-                <li>Ipsum</li>
-                <li>Dolor</li>
-            </ul>
+            <h2>Weather</h2>
+            <div id="weather">
+                <span></span>
+                <span></span>
+            </div>
         </div>
         <div id="jb-footer">
             <div id="write_area">
                 <form class="form" enctype="multipart/form-data" action="write_ok.php?board_id= ?echo $board_id;?>"
                     method="post">
                     <div id="in_title">
-                        <textarea name="title" id="utitle" rows="1" cols="55" placeholder="제목" maxlength="100"
+                        <textarea name="title" id="utitle" rows="1" cols="55" placeholder="Title" maxlength="100"
                             required></textarea>
                     </div>
 
                     <div id="in_content">
-                        <textarea name="content" id="ucontent" placeholder="내용" required></textarea>
+                        <textarea name="content" id="ucontent" placeholder=" " required></textarea>
                     </div>
 
                     <div class="bt_se">
-                        <button class="button" type="submit">글 작성</button>
+                        <button class="button" type="submit">Submit</button>
                     </div>
                 </form>
             </div>
@@ -101,7 +99,9 @@
 
 
     <script src="new.js" defer></script>
-    <!--defer 뜻 찾기-->
+    <script src="weather.js" defer></script>
+
+    <!--defer : 브라우저에게 document가 parse된 이후에 script가 실행이 되어야한다고 알려주는 역할을 한다. -->
 </body>
 
 </html>
