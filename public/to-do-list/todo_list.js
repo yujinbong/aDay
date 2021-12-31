@@ -1,3 +1,5 @@
+'use strict'; //조금 더 상식적인 범위안에서 개발가능, 엔진이 좀 더 효울적으로 빠르게 분석할수있고 실행하는데에 더나은 성능까지 기대할수있다.
+
 const toggleBtn=document.querySelector('.navbar__toogleBtn') ;
 const menu = document.querySelector('.navbar__menu');
 const icons = document.querySelector('.navbar__icons');
