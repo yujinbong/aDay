@@ -29,3 +29,17 @@ let email_data = {
 }
 
 send(email_data);
+
+
+/*output:
+bong-yujin-ui-MacBook-Pro:Javascript bong-yujin$ node prac.js
+{
+  accepted: [ 'aso23456@gmail.com' ],
+  rejected: [],
+  envelopeTime: 77,
+  messageTime: 94,
+  messageSize: 305,
+  response: '250 2.0.0 Ok: queued',
+  envelope: { from: 'ybong@myseneca.ca', to: [ 'aso23456@gmail.com' ] },
+  messageId: '<a76b2e47-e7b5-57c5-22c5-0060cf97ffa6@myseneca.ca>'
+} /*
