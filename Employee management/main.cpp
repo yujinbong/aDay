@@ -76,8 +76,8 @@ void ListRecord() {
 			counter++;
 		
 			cout << setfill(' ') << setw(6) << left<<counter;
-			cout << "  "<< setfill(' ') << setw(7) << EmpID[x];
-			cout << " "<< setfill(' ') << setw(7) << EmpName[x] << endl;
+			cout << "  "<< setfill(' ') << setw(7) << ID[x];
+			cout << " "<< setfill(' ') << setw(7) << NAME[x] << endl;
 		}
 	}
 	if (counter == 0)
@@ -109,14 +109,14 @@ void UpdateRecore(string search) {
 	char empno[5];
 	int counter = 0;
 
-	for (int x = 0; x < maxrow; x++)
+	for (int x = 0; x < MAX; x++)
 	{
-		if (EmpID[x] == search) {
+		if (ID[x] == search) {
 			counter++;
 			cout << "Employee No. ";
 			cin.getline(name, 50);
 
-			EmpName[x] = name;
+			NAME[x] = name;
 			cout << "Update Successfull!" << endl;
 			break;
 		}
@@ -131,13 +131,13 @@ void UpdateRecore(string search) {
 
 void DeleteRecord(string search) {
 	int counter = 0;
-	for (int x = 0; x < maxrow; x++)
+	for (int x = 0; x < MAX; x++)
 	{
-		if (EmpID[x] == search)
+		if (ID[x] == search)
 		{
 			counter++;
-			EmpName[x] = "";
-			EmpID[x] = "";
+			NAME[x] = "";
+			ID[x] = "";
 
 			cout << "Successfully Delete!" << endl;
 			break;
@@ -163,10 +163,10 @@ void SaveToFile() {
 }
 
 int main() {
-
-	cout << "MENU" << endl;
+	
+	cout << "\n EMPLOYEE LIST" << endl;
+	cout << "==============================" << endl;
 	int option;
-	//system("CLS");
 	OpenFile();
 
 	do {
