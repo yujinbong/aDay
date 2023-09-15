@@ -77,9 +77,18 @@ header {
 /* Hone */
 .home  {
     width:100%;
-    min-height: 440px;
+    min-height: 100px;
     background: var(--container-color);
     display: grid;
     justify-content: center;
     align-items:center;
 }
+
+.search-form {
+    text-align: center; 
+    margin-top: 10px; 
+  }
+  
+  .home text{
+    
+  }
