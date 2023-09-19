@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todo_list.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto+Mono:wght@500&display=swap"
+        rel="stylesheet">
+    <title>Yujin Bong</title>
+    <script src="https://kit.fontawesome.com/cfbd5af3c2.js" crossorigin="anonymous"></script>
+    <script defer src="todo_list.js" ></script> <!--html을 parsing 하는 동안 js를 받아놓고 parsing이 끝나면 사용자에게 보여준 후 바로 이어서 js 를 실행한다 --> 
+    <script defer src="weather.js" ></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar__logo">
+            <i class="fas fa-paw"></i>
+            <a href="">TO DO LIST</a>
+        </div>
+
+        <ul class="navbar__menu">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">TO DO LIST</a></li>
+            <li><a href="">WEATHER</a></li>
+            <li><a href="">MEMO</a></li>
+        </ul>
+
+        <ul class="navbar__icons">
+
+            <li><a style="text-decoration: none" href="https://github.com/yujinbong" class="fab fa-github"></a></li>
+            <li><a style="text-decoration: none" href="mailto:aso23456@gmail.com?subject=Hello!" class="fas fa-at"></a>
+            </li>
+        </ul>
+
+        <a href="#" class="navbar__toogleBtn">
+            <i class="fas fa-bars"></i>
+        </a>
+    </nav>
+    <!-- middle -->
+
+
+    <div id="jb-container">
+        <div id="jb-header">
+            <div id="date"> </div>
+            <div class="clock">
+                <span class="js-clock">
+                    00:00
+                </span>
+            </div>
+        </div>
+        <div id="jb-content">
+            <h2>YOU CAN DO IT YUJINNNNN </h2>
+            <form onsubmit="return false;">
+                <!--form태그 내부에있는 input text box에서 엔터키를 누르게되면 자동으로 sbmit이되어 페이지가 재 로드된다.-->
+                <div>
+                    <input type="text" class="item" autofocus="true" placeholder="add-to-do-list">
+
+                </div>
+                <div>
+                    <button type="button" class="input__button"><i class="fas fa-plus-circle"></i></button>
+                </div>
+            </form>
+
+            <div class="item__list"></div>
+
+
+
+        </div>
+        <div id="jb-sidebar">
+
+            <div class="weather_icon">Weather</div>
+            <img class="weatherIcon" src="" alt="no">
+            <br>
+            <div id="weather">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div id="jb-footer">
+            <div id="write_area">
+                <form class="form" enctype="multipart/form-data" action="write_ok.php?board_id= ?echo $board_id;?>"
+                    method="post">
+                    <div id="in_title">
+                        <textarea name="title" id="utitle" rows="1" cols="55" placeholder="Title" maxlength="100"
+                            required></textarea>
+                    </div>
+
+                    <div id="in_content">
+                        <textarea name="content" id="ucontent" placeholder=" " required></textarea>
+                    </div>
+
+                    <div class="bt_se">
+                        <button class="button" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
