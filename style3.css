@@ -68,6 +68,8 @@ i{
     background-color: white;
     background-image: none; 
     font-size: 20px;
+    border: none; 
+    border-radius: 5px;
     
 }
 
@@ -76,6 +78,7 @@ i{
     background-color: #fd8f44;
     padding: 20px;
     background-image: none; 
+    border-radius: 5px;
 }
 input {
     width: 70%;
@@ -85,7 +88,7 @@ input {
     border: none; 
     border-radius: 8px;
     padding: 10px 12px;
-    font-size: 14px;
+    font-size: 18px;
 }
 button {
     width: 10%;
@@ -96,9 +99,7 @@ button {
     font-size: 17px;
 }
 
-input:hover::placeholder {
-    text-align: 20px;
-}
+
 
 @media ( max-width: 480px ) {
     .container {
