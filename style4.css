@@ -1,0 +1,248 @@
+
+:root {
+    --containter-color: blue;
+    --second-color: #fd8f44;
+    --text-color: #fff;
+    --bg-color: #172317;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* header */
+
+.header{
+        padding: 20px;
+        margin-bottom: 20px;
+        border: 1px solid #bcbcbc;
+        background-image: none; 
+
+}
+
+.logo {
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--bg-color);
+    padding: 2px;
+}
+
+.logo span {
+    color: var(--second-color);
+     background-image: none; 
+}
+p { background-image: none; }
+
+i{
+    font-size : 3.2rem;
+    color: #fd8f44;
+    margin-top: 0.2cm;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+
+    }
+     
+.container div {
+        margin: 50px;
+        padding: 10px;
+      
+        
+
+    }
+    .menu {
+        /*background-color: yellow;*/ 
+        border-right: 1px solid lightgray; 
+        padding: 0; 
+        margin: 10px;
+        height: 90vh;
+        width: 25%;
+        position: relative; 
+        overflow: hidden; 
+    }
+ 
+   .box1 {
+    /*background-color: red;*/ 
+    width: 80%;
+    height: 80%;
+    position: relative; 
+    background-color: aqua;
+   }
+
+   .box1-1 {
+    width: 50%;
+    height: 60%;
+    position: absolute;
+    top: 55%; 
+    right: 70.5%; 
+    transform: translate(125%, -50%); 
+    background-color: #fd8f44;
+  }
+  
+
+   input{
+    width: 45%;
+    height: 8mm;
+    margin-bottom: 10px; 
+    background-image: none; 
+    border-bottom: 1px solid lightgray; 
+    border-color :lightgrey;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 20px;
+   }
+
+   button {
+    width: 30%;
+    height: 15mm;
+    background-image: none; 
+    border: none; 
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    }
+
+
+ 
+/* SHOP - 서브메뉴 */
+
+.sub-menu ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 10px;
+
+}
+.sub-menu{
+    width: 0;
+    height: 100%;
+    overflow: hidden;
+    transition-duration: 0.5s;
+    transform: translateX(-10px); 
+   
+}
+
+.top-menu{
+  font-size: 40px;
+  font-weight: bold;
+  color: #fd8f44;
+  left: 100% ;
+}
+
+.main-nav-left:hover > .sub-menu{
+    
+    height: 100%;
+    width: 140px;
+
+    overflow: hidden;
+    transform: translateX(-100px); 
+}
+.sub-menu-list li {
+    line-height: 3rem;
+    font-weight: bold;
+    font-size: 20px; 
+    color: #fd8f44;
+}
+
+.title {
+  color:  #fd8f44;
+}
+
+/* open class가 있을 때-> 보이게 */
+.sub-menu.open .sub-menu-list {
+    display: block; 
+}
+
+
+
+
+
+
+@media (max-width: 1200px) {
+  .menu {
+    width: 100%; 
+  }
+  .menu ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu li {
+    padding: 10px 0; 
+    font-size: 20px; 
+  }
+  .box1{
+    width: 90%; 
+  }
+  .box1-1{
+    width: 10%;
+    transform: translate(470%, -50%); 
+  }
+  
+  input {
+      width: 90%; 
+      margin-bottom: 5px; 
+    }
+    
+    button {
+      width: 100%; 
+      font-size: 16px; 
+    }
+  }
+   
+   @media (max-width: 768px) {
+    .menu {
+      width: 100%; 
+    }
+    .menu ul {
+      display: flex;
+      flex-direction: column;
+    }
+    .menu li {
+      padding: 10px 0; 
+      font-size: 20px; 
+    }
+    .box1{
+      width: 90%; 
+    
+    .box1-1{
+      width: 10%;  
+      transform: translate(470%, -50%); 
+    }
+    
+    input {
+        width: 80%; 
+        margin-bottom: 5px; 
+      }
+      
+      button {
+        width: 100%; 
+        font-size: 11px; 
+      }
+    }
+
+
+  
+  @media (max-width: 480px) {
+    .menu li {
+      font-size: 16px;
+    }
+    input {
+      width: 70%; 
+      margin-bottom: 5px; 
+    }
+    button {
+      width: 100%; 
+      font-size: 16px; 
+    }
+    .box1{
+      width: 90%; 
+    }
+    .box1-1{
+      width: 10%; 
+      transform: translate(440%, -50%); 
+    }
+  }
+}
