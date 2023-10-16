@@ -47,7 +47,7 @@ i{
     }
      
 .container div {
-        margin: 50px;
+        margin: 30px;
         padding: 10px;
          
 
@@ -78,11 +78,7 @@ i{
     left: 30%;
   }
 
-  .board_view_wrap{
-    width: 750px;
-    position: absolute;
-    left: 30%;
-  }
+ 
  
 
    input{
@@ -175,12 +171,6 @@ i{
  
 }
 
-.board_view {
-  width: 100%;
-  transform: translate(-5%, -10%); 
-  border-top: 2px solid #000;
-
-}
 
 .board_list > div {
   border-bottom: 1px solid #ddd;
@@ -299,21 +289,40 @@ i{
 
 /* view.html */
 
+.board_view {
+  width: 750px;
+  transform: translate(-2%, -10%); 
+  border-top: 2px solid #000;
+}
+
+.board_view_wrap{
+  width: 750px;
+  position: absolute;
+}
+
 .board_view .title1{
-  padding: 20px 15px;
+  padding: 15px 10px;
   border-bottom:1px dashed #ddd;
+  transform: translate(-5%, -10%); 
   font-size: 2rem;
 }
 .board_view .info{
-  padding: 15px;
+  width: 750px; /*확인해보기!!!!!!!!*/
+  padding: 1px;
   border-bottom:1px solid #999;
+ transform: translate(-5%, -10%); 
+
 }
 .board_view .info dl {
   display: inline-block;
+  padding:0 10px;
+
 }
 .board_view .info dl dt,
 .board_view .info dl dd{
   display:inline-block;
+  font-size:1.1rem;
+
 }
 
 
@@ -341,13 +350,10 @@ i{
 
   }
   .board_view_wrap{
-    width: fixed;
+    width: 50%;
     height: 80%;
-
-
   }
  
-  
   input {
       width: 90%; 
       margin-bottom: 5px; 
@@ -381,7 +387,6 @@ i{
       position: fixed;
 
     }
-    
 
     input {
         width: 80%; 
@@ -393,14 +398,22 @@ i{
         font-size: 11px; 
       }
     }
-
-
+/* view*/
+.board_view_wrap{
+  width: 30%;
+  height: 80%;
+}
   
+
   @media (max-width: 480px) {
     .menu,
   .box1,
   .board_list_wrap {
     position:0;
     
+  }
+  .board_view_wrap{
+    width: 50%;
+    height: 80%;
   }
   }
