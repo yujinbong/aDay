@@ -80,7 +80,7 @@ i{
     background-image: none; 
     border-radius: 5px;
 }
-input {
+.Input_menu {
     width: 70%;
     height: 10mm;
     margin-bottom: 10px; 

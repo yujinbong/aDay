@@ -15,7 +15,7 @@
     <div class="container">
       <div class="menu" id="menu">
  
-          <input type="text" class="Input_menu" placeholder="  search">
+          <input type="text"  class="Input_menu"  placeholder="  search">
           <button>Search</button>
 
 
@@ -39,55 +39,39 @@
       </div>
     </div>
       <div class="box1"></div>
-   
-            <div class="board_view_wrap">
-            <div class="board_view">
-              <div class="title1">
-                    글 제목이 들어갑니다
-              </div>
-              <div class="info">
+  
+            <div class="board_list_wrap">
+            <div class="board_write">
+               <div class="title1">
                 <dl>
-                    <dt>Number</dt>
-                    <dd>1</dd>
-                </dl>
+                    <dt>Title</dt>
+                    <dd><input type="text" placeholder="type title"></dd>
+                </dl> 
+                </div>
+               <div class="info">
                 <dl>
                     <dt>Writer</dt>
-                    <dd>봉유진</dd>
-                </dl>
+                    <dd><input type="text" class="input_write" placeholder="type writer"></dd>
+                </dl> 
                 <dl>
-                    <dt>Date</dt>
-                    <dd>2023.10.13</dd>
-                </dl>
-                <dl>
-                    <dt>View</dt>
-                    <dd>1</dd>
-                </dl>
-
-              </div>
-              <div class="cont">
-                    글 내용이 들어갑니다.<br>
-                    글 내용이 들어갑니다.<br>
-                    글 내용이 들어갑니다.<br>
-                    글 내용이 들어갑니다.<br>
-                    글 내용이 들어갑니다.<br>
-                    글 내용이 들어갑니다.<br>
-                    글 내용이 들어갑니다.<br>
-                    글 내용이 들어갑니다.
-
-              </div>
+                    <dt>Password</dt>
+                    <dd><input type="password" class="input_write" placeholder="type password"></dd>
+                </dl> 
+                </div>
+               <div class="cont">
+                    <textarea placeholder="type content"></textarea>
             </div>
-         
+            </div>
+           
             <div class="bt_wrap">
-                    <a href="post.html" class="on">List</a>
-                    <a href="edit.html" >Edit</a>
+                    <a href="write.html" class="on">Create</a>
+                    <a href="post.html" >Cancel</a>
             </div>
     </div>
   </div>
 </div>
- <!-- link to JS-->
- <script src="js/map.js"></script>
 
- </script>
+
 
 </body>
 </html>
